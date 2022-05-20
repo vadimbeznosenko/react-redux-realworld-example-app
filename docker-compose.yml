@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:stable-alpine
+    container_name: realworld-docker-nginx
+    ports:
+      - "80:80"
+    networks:
+      - my_network
+      
+networks:
+  my_network:
+
+
+
